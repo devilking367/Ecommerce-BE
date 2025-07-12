@@ -1,4 +1,93 @@
-[
-  { "id": 1, "name": "Alice", "email": "alice@example.com" },
-  { "id": 2, "name": "Bob", "email": "bob@example.com" }
-]
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "username": "alicej",
+      "phone": "123-456-7890",
+      "website": "alice.dev",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "zipcode": "10001"
+      },
+      "company": {
+        "name": "OpenAI",
+        "position": "Developer Advocate"
+      },
+      "role": "admin",
+      "status": "active",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "username": "bobsmith",
+      "phone": "234-567-8901",
+      "website": "bobsmith.io",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Los Angeles",
+        "zipcode": "90001"
+      },
+      "company": {
+        "name": "TechSoft",
+        "position": "Fullstack Developer"
+      },
+      "role": "user",
+      "status": "inactive",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Green",
+      "email": "charlie.green@example.com",
+      "username": "charlieg",
+      "phone": "345-678-9012",
+      "website": "charlie.green",
+      "address": {
+        "street": "789 Oak Ave",
+        "city": "Chicago",
+        "zipcode": "60601"
+      },
+      "company": {
+        "name": "NextGen",
+        "position": "Project Manager"
+      },
+      "role": "manager",
+      "status": "active",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "id": 4,
+      "name": "Diana Lee",
+      "email": "diana.lee@example.com",
+      "username": "dianal",
+      "phone": "456-789-0123",
+      "website": "dianalee.me",
+      "address": {
+        "street": "101 Maple Rd",
+        "city": "Seattle",
+        "zipcode": "98101"
+      },
+      "company": {
+        "name": "WebX",
+        "position": "UX Designer"
+      },
+      "role": "editor",
+      "status": "pending",
+      "avatar": "https://i.pravatar.cc/150?img=4"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "limit": 4,
+    "total": 4,
+    "totalPages": 1
+  },
+  "errorCode": null,
+  "errorMessage": null
+}
