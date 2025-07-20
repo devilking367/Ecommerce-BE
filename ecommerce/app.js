@@ -18,8 +18,10 @@ app.use(express.json());
 const userRoutes = require('./api/users/user.route');
 const categoryRoutes = require('./api/categories/category.route');
 const productRoutes = require('./api/products/product.route');
+const authRoutes = require('./api/auth/auth.route');
 
 // Dùng routes
+app.use('/api', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
