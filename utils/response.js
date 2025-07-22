@@ -6,12 +6,16 @@ exports.success = (res, data, pagination) =>
     errorCode: 200,
     errorMessage: "Success"
   });
-
-exports.error = (res, code, message) =>
-  res.status(code).json({
+  
+exports.error = (res, code, message, meta = {}) => {
+  return res.status(code).json({
     success: false,
     data: null,
     pagination: null,
-    errorCode: code,
-    errorMessage: message
+    error: {
+      code,
+      message,
+      ...meta,
+    },
   });
+};
