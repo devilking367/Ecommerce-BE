@@ -3,6 +3,7 @@ const db = require('./api/models'); // hoặc './src/models' nếu bạn dùng m
 
 const PORT = process.env.PORT || 3000;
 
+// Thêm  force: true nếu bạn muốn xóa và tạo lại bảng
 db.sequelize.sync({ alter: true }) // hoặc alter: true nếu bạn muốn cập nhật bảng mà không drop
   .then(() => {
     console.log('✅ DB synced');
