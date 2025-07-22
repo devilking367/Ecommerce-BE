@@ -19,6 +19,7 @@ const userRoutes = require('./api/users/user.route');
 const categoryRoutes = require('./api/categories/category.route');
 const productRoutes = require('./api/products/product.route');
 const authRoutes = require('./api/auth/auth.route');
+const errorHandler = require('./utils/errorHandler');
 
 // Dùng routes
 app.use('/api', authRoutes);
@@ -29,5 +30,8 @@ app.use('/api/products', productRoutes);
 app.get('/', (req, res) => {
   res.send('E-commerce Backend API');
 });
+
+
+app.use(errorHandler);
 
 module.exports = app;
